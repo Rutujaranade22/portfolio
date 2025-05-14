@@ -11,13 +11,13 @@ header {
   top: 20px;
   right: 40px;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.3); /* transparent dark background */
+  background: rgba(0, 0, 0, 0.3); 
   padding: 10px 20px;
   border-radius: 10px;
-  display: flex; /* Flexbox layout for header */
-  justify-content: space-between; /* Space between portfolio name and navigation */
-  align-items: center; /* Vertically center the items */
-  width: 100%; /* Ensure the header spans across the full width */
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  width: 100%;  
 }
 
 .portfolio-name {
@@ -26,14 +26,14 @@ header {
   color: #FF00FF;
   text-shadow: 0 0 10px black;
   animation: fadeIn 2s ease-in-out;
-  margin-left: 20px; /* Add some margin to the left */
-  white-space: nowrap; /* Prevent the name from wrapping */
+  margin-left: 20px;  
+  white-space: nowrap;  
 }
 
 nav {
   display: flex;
-  flex-grow: 1; /* Allow the nav to take up remaining space */
-  justify-content: flex-end; /* Align the navigation items to the right */
+  flex-grow: 1;  
+  justify-content: flex-end;  
 }
 
 nav ul {
@@ -112,18 +112,17 @@ a.btn:hover {
   font-size: 14px;
 }
 
-/* === Animation for Portfolio Name === */
-@keyframes fadeIn  {
+ @keyframes fadeIn  {
   0% {
     opacity: 0;
-    transform: scale(0.5) translateY(-50px); /* Start with smaller size and above */
+    transform: scale(0.5) translateY(-50px);  
   }
   50% {
     opacity: 1;
-    transform: scale(1.1) translateY(20px); /* Slight scale-up and bounce down */
+    transform: scale(1.1) translateY(20px); 
   }
   100% {
     opacity: 1;
-    transform: scale(1) translateY(0); /* End at normal size with no vertical movement */
+    transform: scale(1) translateY(0);  
   }
 }
