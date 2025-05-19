@@ -4,32 +4,145 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+ 
   <title>My Portfolio</title>
 </head>
 <body>
   <header>
-    <div class="portfolio-name">.....Rutuja Portfolio</div> <!-- Portfolio name is fixed here -->
+    <div class="portfolio-name">.....Welcome!</div> <!-- Portfolio name is fixed here -->
     <nav>
       <div class="nav-left">Rutuja</div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     </nav>
   </header>
-
+<section is="home"> 
   <section class="main">
     <div class="main-content">
       <h1>Rutuja Ranade</h1>
       <p>
         I'm Rutuja Ranade, a passionate Java and Frontend Developer. I specialize in building responsive, user-friendly web applications using technologies like HTML, CSS, JavaScript, and React. I love creating elegant solutions that solve real-world problems. Explore my skills, projects, and let's connect!
       </p>
-      <a href="about.html" class="btn">About Me</a>
+      <a href="#about" class="btn">About Me</a>
     </div>
   </section>
+<section id="about">
+<div class="about-container">
+    <h1>About Me</h1>
+    <div class="about-flex">
+      <div class="photo-section">
+        <img src="my.jpg" alt="Rutuja Ranade" />
+      </div>
+      <div class="text-section">
+        <p>Hello! I'm <strong>Rutuja Ranade</strong>, a Java and Frontend Developer with over 3 years of experience in the fintech space. I’m passionate about building clean, user-friendly, and accessible web applications that solve real-world problems.</p>
+        <p>I enjoy working with technologies like <strong>Java, HTML, CSS, JavaScript</strong>, and modern tools such as <strong>React, Git</strong> and more.</p>
+        <h2>Work Experience</h2>
+        <p>I've completed internships at <strong>Shivendu Infotech Pvt. Ltd.</strong> and <strong>Codsoft</strong> where I worked on live projects, designed interfaces, implemented backend logic, and collaborated with development teams to deliver responsive web solutions.</p>
+        <h2>My Goal</h2>
+        <p>I'm looking to grow as a full-stack developer and contribute to innovative, impactful software projects. I believe in continuous learning and building with purpose.</p>
+      </div>
+    </div>
+  </div>
+</section>  
+</section>
+<section id="skills">
+  <div class="s-main-content">
+    <div class="s-skills-container">
+      <h1>My Skills</h1>
+      <div class="s-skills-grid">
+        <div class="s-skill-card">Java</div>
+        <div class="s-skill-card">HTML</div>
+        <div class="s-skill-card">CSS</div>
+        <div class="s-skill-card">JavaScript</div>
+        <div class="s-skill-card">React</div>
+         <div class="s-skill-card">Bootstrap</div>
+        <div class="s-skill-card">Tailwind CSS</div>
+        <div class="s-skill-card">MySQL</div>
+        <div class="s-skill-card">Git & GitHub</div>
+         <div class="s-skill-card">Problem Solving</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects">
+  <div class="projects-container">
+    <h1>My Projects</h1>
 
+    <div class="project-card">
+      <div class="project-title">🩻 Interactive X-ray Image Annotation System</div>
+      <div class="project-description">
+        A web-based medical diagnostics system that enables doctors and radiologists to annotate and highlight areas of concern directly on X-ray images. Built with JavaScript, HTML5 Canvas, and integrated with basic image processing concepts.
+      </div>
+      <div class="links">
+        <a href="https://github.com/yourusername/xray-annotation" target="_blank">GitHub</a>
+        <a href="https://xray-annotation.netlify.app" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">💅 Glam Beauty Parlour Website</div>
+      <div class="project-description">
+        The website features an elegant layout showcasing services and client testimonials, with dedicated navigation links for Hairstyles and Contact pages
+      </div>
+      <b>Technologies Used:</b> HTML,CSS.
+      <div class="links">
+        <a href="https://github.com/yourusername/glam-beauty" target="_blank">GitHub</a>
+        <a href="https://glam-beauty-hub.netlify.app" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">💻Students Record Web App</div>
+      <div class="project-description">
+        The project allows users to add and remove student names dynamically in the browser. It includes a stylish UI with a centered input field and buttons, and each entry is displayed with numbering. JavaScript is used for managing the student list and updating the display in real-time without refreshing the page.
+      </div>
+      <b>Technologies Used:</b> HTML,CSS,JS
+      <div class="links">
+        <a href="https://github.com/Rutujaranade22/Book" target="_blank">GitHub</a>
+        <a href="https://stu-dentrecord.netlify.app/" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">🌐Tic-Tac-Toe game</div>
+      <div class="project-description">
+        The application allows two players to play turn-by-turn by clicking on the grid. The current player's turn is shown dynamically, and the game displays alerts for win or draw conditions. It also includes a Restart button to reset the board at any time.
+      </div>
+      <b>Technologies Used:</b> HTML,CSS,JS
+      <div class="links">
+        <a href="https://github.com/Rutujaranade22/TIC-TAC-TOE" target="_blank">GitHub</a>
+        <a href="https://ti-ctac.netlify.app/" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="contact-container">
+    <h1>Contact Me 📞</h1>
+
+    <div class="info">
+      <p><strong>Email:</strong> rutujaranade7@gmail.com</p>
+      <p><strong>Phone:</strong> +91-9876543210</p>
+      <p><strong>Location:</strong> Nashik, Maharashtra</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rutuja-ranade-78a834285/" target="_blank">linkedin.com/in/rutuja-ranade</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Rutujaranade22" target="_blank">github.com/rutuja-ranade</a></p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+</div>
   <footer class="footer">
     <div class="footer-content">
       <p>&copy; 2025 Rutuja Ranade. All rights reserved.</p>
