@@ -27,19 +27,17 @@ header {
   text-shadow: 0 0 10px black;
   animation: fadeIn 2s ease-in-out;
   margin-left: 20px;  
-  white-space: nowrap;  
-}
+ }
 
 nav {
   display: flex;
   flex-grow: 1;  
-  justify-content: flex-end;  
-}
+ justify-content: flex-end; }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -53,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #00FFFF;
+  color: #b82e8a;
 }
 
 /* === Main Section === */
@@ -101,7 +99,7 @@ a.btn {
 }
 
 a.btn:hover {
-  background-color: #00FFFF;
+  background-color:#b82e8a;
 }
 
 .footer {
@@ -148,14 +146,10 @@ body::before {
       padding: 40px;
       border-radius: 16px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        
     }
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      text-align: center;
-      color: white;
-    }
+   
 
     p {
       font-size: 18px;
@@ -164,22 +158,10 @@ body::before {
     }
 
     
-    a.back-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      color: white;
-      background-color: #FF00FF;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
+     
 
-    a.back-btn:hover {
-      background-color: #00FFFF;
-    }
-    .about-flex {
+    
+.about-flex {
   display: flex;
   gap: 40px;
   align-items: flex-start;
@@ -213,11 +195,7 @@ body::before {
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
 
-    h1 {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 30px;
-    }
+    
 
    .s-skills-grid {
       display: grid;
@@ -299,7 +277,7 @@ body::before {
       background-color: #FF00FF;
       color: white;
     }
-     .info {
+    .info {
       text-align: center;
       margin-bottom: 30px;
       font-size: 18px;
@@ -327,7 +305,6 @@ body::before {
       align-items: center;
       gap: 15px;
       width: 100%;
-      color: white;
     }
 
     input, textarea {
@@ -351,18 +328,37 @@ body::before {
     }
 
     button {
-      width: 50%;
-      max-width: 200px;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background-color: #FF00FF;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+      display: inline-block;
+  margin-top: 20px;
+   padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #FF00FF;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #00FFFF;
+  background-color:#b82e8a;
     }
+    @media (max-width: 1024px) {
+  #home h1 {
+    font-size: 32px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
